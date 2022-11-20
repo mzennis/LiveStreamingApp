@@ -1,2 +1,2 @@
 # StreamerApp
-Copied from LiveVideoBroadcaster by Ant Media
+Copied from [LiveVideoBroadcaster](https://github.com/ant-media/LiveVideoBroadcaster/) by Ant Media
