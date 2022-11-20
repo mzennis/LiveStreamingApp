@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">StreamerApp</string>
+
+    <string name="permission">Permission</string>
+    <string name="app_does_not_work_without_permissions">App does not work without permissions. Please give Camera and Record Audio permission on app settings</string>
+    <string name="start_live_streaming">Start Live Streaming</string>
+
+</resources>
