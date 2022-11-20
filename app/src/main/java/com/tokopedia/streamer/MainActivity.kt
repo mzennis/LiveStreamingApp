@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
 
-        private const val INGEST_URL = "rtmp://192.168.0.110/live/BkEdY7PLi"
+        private const val INGEST_URL = "rtmp://192.168.245.23/live/ryB398wIs"
 
     }
 
@@ -88,7 +88,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun viewOnPrepare() {
         binding.btnRecord.visibility = View.VISIBLE
-        binding.viewBgLens.visibility = View.VISIBLE
         binding.viewLiveAction.visibility = View.GONE
 
         binding.btnRecord.setOnClickListener {
@@ -98,7 +97,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun viewOnLive() {
         binding.btnRecord.visibility = View.GONE
-        binding.viewBgLens.visibility = View.INVISIBLE
         binding.viewLiveAction.visibility = View.VISIBLE
 
         binding.btnClose.setOnClickListener {
@@ -172,7 +170,7 @@ class MainActivity : AppCompatActivity() {
                 mStreamer?.init(this@MainActivity, binding.glSurfaceView)
                 mStreamer?.setAdaptiveStreaming(true)
             }
-            mStreamer?.openCamera(Camera.CameraInfo.CAMERA_FACING_FRONT)
+            mStreamer?.openCamera(Camera.CameraInfo.CAMERA_FACING_BACK)
         }
 
         override fun onServiceDisconnected(arg0: ComponentName) {
