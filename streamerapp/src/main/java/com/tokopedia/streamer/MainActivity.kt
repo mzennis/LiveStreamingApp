@@ -29,12 +29,6 @@ import kotlinx.coroutines.withContext
 
 class MainActivity : AppCompatActivity() {
 
-    companion object {
-
-        private const val INGEST_URL = "rtmp://192.168.245.23/live/ryB398wIs"
-
-    }
-
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -120,7 +114,7 @@ class MainActivity : AppCompatActivity() {
         viewOnChangeStatus("Connecting...")
         lifecycleScope.launch {
             try {
-                val isSuccess = startStreaming(INGEST_URL)
+                val isSuccess = startStreaming(BuildConfig.LIVE_URL)
                 if (isSuccess) {
                     viewOnLive()
                     viewOnChangeStatus("LIVE")
