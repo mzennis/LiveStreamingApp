@@ -15,5 +15,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "StreamerApp"
 
-include ':app'
+include ':streamerapp'
 include ':streamer'
